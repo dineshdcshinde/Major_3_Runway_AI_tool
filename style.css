@@ -1,0 +1,867 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+  color: black;
+}
+
+.hero {
+  min-height: 100%;
+  min-width: 100%;
+  position: relative;
+}
+
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+nav {
+  z-index: 111;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* color: #fff; */
+  height: 10%;
+  width: 100%;
+  background-color: transparent;
+  /* background: linear-gradient(
+    135deg,
+    rgba(50, 50, 50, 0.8),
+    rgba(75, 75, 75, 0.8)
+  ); */
+  position: fixed;
+  z-index: 113;
+}
+
+
+
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1%;
+}
+
+.first p {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+.last {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 3%;
+}
+
+.last button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border: 1px solid #ddd;
+  background-color: transparent;
+  color: white;
+  border-radius: 25px;
+  transition: background-color 0.3s linear, color 0.3s linear;
+}
+
+.last button:hover {
+  background-color: white;
+  color: #111;
+  cursor: pointer;
+}
+
+nav .center {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center a {
+  text-decoration: none;
+  color: #fff;
+  padding: 2%;
+  text-transform: uppercase;
+  font-family: 0.5rem;
+}
+
+/* hero-content */
+.hero-content {
+  padding-top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 1%; */
+  color: #fff;
+}
+
+.hero-content h2 {
+  font-family: serif;
+  font-size: 7rem;
+  font-weight: 100;
+}
+
+.hero-content p {
+  margin-bottom: 1%;
+}
+
+.hero-btns {
+  display: flex;
+  color: #fff;
+  gap: 1rem;
+}
+
+.hero-btns button {
+  padding: 10px 25px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 1rem;
+}
+
+.hero-btns .try-btn {
+  background-color: #fff;
+  transition: color 0.3s linear;
+}
+
+.try-btn:hover {
+  color: #323030;
+  cursor: pointer;
+}
+
+.hero-btns .watch {
+  color: #fff;
+  transition: color 0.3s linear, background-color 0.3s linear;
+}
+
+.hero-btns .watch:hover {
+  color: black;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* adv-created */
+
+.adv-created {
+  min-height: auto;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 5%;
+  /* background-color: #1a1a1a; */
+}
+
+.adv-creative-head {
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.adv-creative-head h2 {
+  font-size: 4.5rem;
+  font-weight: 300;
+  text-align: center;
+  font-family: serif;
+}
+
+.adv-creative-head p {
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.adv-creative-head button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  background-color: transparent;
+  border: 1px solid #1a1a1a;
+  transition: background-color 0.3s linear, color 0.3s linear;
+}
+
+.adv-creative-head button:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: #ddd;
+}
+
+.creative-container {
+  height: auto;
+  /* height: 85%; */
+  width: 100%;
+  /* background-color: #1a1a1a; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* margin-top: 0.5%; */
+}
+
+.creative-container h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-left: 3%;
+  /* margin-top: 0.5%; */
+}
+
+.runway-container {
+  min-height: 70%;
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+  align-items: stretch;
+  padding-top: 10%;
+}
+
+.runway-item {
+  color: #fff;
+  height: 50%;
+  width: 30%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* background-color: #f0f0f0;  */
+  overflow: hidden;
+}
+
+.adv-runway-img {
+  width: 100%;
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.adv-runway-img img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 7s ease;
+  aspect-ratio: 16 / 9;
+  /* aspect-ration is nothing but the property in that we can set the height and width to aquire the position like square.
+  16/9 ->> it is for the laptop 
+  */
+}
+
+.runway-item:hover p {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.runway-item:hover h3 {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.runway-item img {
+  height: 80%;
+  width: 100%;
+  display: inline-flex;
+  overflow: hidden;
+  object-fit: cover;
+  margin-bottom: 10px;
+  transform-origin: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.runway-item img:hover {
+  transform: scale(1.1);
+}
+
+.runway-item h3,
+.runway-item p {
+  text-align: center;
+}
+
+/* Research Section */
+.research-sec {
+  min-height: 100%;
+  width: 100%;
+  background-color: #0c0c0c;
+  color: #fff;
+  position: relative;
+}
+
+.research-head {
+  padding-top: 4%;
+  margin-left: 6%;
+  /* background-color: antiquewhite; */
+}
+
+.research-head p {
+  text-transform: uppercase;
+  margin-bottom: 1%;
+  font-size: 0.8rem;
+}
+
+.research-head h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1%;
+}
+
+.research-head button {
+  padding: 10px 20px;
+  outline: none;
+  color: #fff;
+  border: none;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-weight: 1rem;
+  font-weight: 600;
+  background-color: transparent;
+  transition: color 0.3s linear, background-color 0.3s linear;
+}
+
+.research-head button:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: #fff;
+}
+
+/* research-container */
+
+.research-container {
+  min-height: 70%;
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+  align-items: stretch;
+  margin-top: 10%;
+}
+
+.research-item {
+  height: 30%;
+  width: 30%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* background-color: #f0f0f0;  */
+  overflow: hidden;
+}
+
+.research-img {
+  width: 100%;
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.research-img img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 7s ease;
+  aspect-ratio: 16 / 9;
+  /* aspect-ration is nothing but the property in that we can set the height and width to aquire the position like square.
+  16/9 ->> it is for the laptop 
+  */
+}
+
+.research-img img:hover {
+  transform: scale(1.2);
+}
+
+.research-item h3,
+.research-item p {
+  margin-top: 0.5rem;
+  /* flex-shrink: 0;  */
+}
+
+/* runway-studio */
+
+.runway-studio {
+  min-height: 100%;
+  width: 100%;
+  background-color: #0c0c0c;
+}
+
+.std-head {
+  padding-top: 13%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #ffffff;
+}
+
+.std-head p {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.std-head p .run-std-logo {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.std-head h2 {
+  font-family: serif;
+  font-size: 6rem;
+  text-align: center;
+  font-weight: 200;
+}
+
+.studio-video {
+  min-height: 70%;
+  width: 100%;
+  max-width: 70%;
+  /* background-color: rebeccapurple; */
+  /* margin: 0 auto; */
+  margin: 4% auto;
+  position: relative;
+}
+
+.studio-video video {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: filter 0.3s ease;
+}
+
+.studio-video:hover video {
+  filter: blur(3px);
+}
+
+.view-more-btn {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  transition: background-color 0.3s linear, color 0.3s linear;
+}
+
+.view-more-btn:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.studio-video:hover .view-more-btn {
+  opacity: 1;
+}
+/* video desc */
+.std-vid-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3%;
+  color: #fff;
+}
+
+.std-vid-desc h2 {
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin-bottom: 1%;
+}
+
+.std-vid-desc button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border: 1px solid #ddd;
+  font-weight: 600;
+  border-radius: 25px;
+  color: #fff;
+  background-color: transparent;
+  transition: background-color 0.3s linear, color 0.3s linear;
+}
+
+.std-vid-desc button:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+/* runway-initiative */
+.runway-initiative {
+  min-height: 70%;
+  width: 100%;
+  background-color: #0c0c0c;
+}
+
+/* .initiative-container {
+  min-height: 90%;
+  padding-top: 10%;
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 1%;
+  color: #fff;
+}
+
+.initiative-item {
+  height: 30%;
+  width: 30%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  height: 250px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.initiative-img {
+  height: auto;
+  width: 100%;
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.initiative-img img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  transition: transform 9s ease;  
+
+}
+
+.initiative-item:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.initiative-item .initi-des-1{
+  margin-top: 1.4%;
+  font-size: 1.2rem;
+  color: #fff;
+} */
+
+.initiative-container {
+  min-height: 70%;
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+  align-items: stretch;
+  padding-top: 10%;
+}
+
+.initiative-item {
+  color: #fff;
+  height: 50%;
+  width: 30%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #fff;
+  /* background-color: #f0f0f0;  */
+  overflow: hidden;
+}
+
+.initiative-img {
+  width: 100%;
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.initiative-img img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 7s ease;
+  aspect-ratio: 16 / 9;
+  /* aspect-ration is nothing but the property in that we can set the height and width to aquire the position like square.
+  16/9 ->> it is for the laptop 
+  */
+}
+
+.initiative-item:hover img {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.initi-des-1 {
+  margin-top: 2%;
+  margin-bottom: 1%;
+  font-size: 1.3rem;
+}
+
+.initi-des-1:hover {
+  opacity: 0.6;
+}
+
+.initi-des-2 {
+  margin-top: 2%;
+  margin-bottom: 1%;
+  font-size: 0.9rem;
+  color: rgb(102, 110, 122);
+}
+
+/* customer-story */
+
+.customer-story {
+  min-height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  /* color: #fff; */
+}
+
+.custm-head {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.custm-head h2 {
+  font-family: serif;
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 2%;
+}
+
+.custm-head button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border: 1px solid black;
+  color: #000;
+  border-radius: 25px;
+  background-color: transparent;
+  transition: background-color 0.3s linear, color 0.3s linear;
+}
+
+.custm-head button:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* story-container */
+.story-container {
+  min-height: 70%;
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-top: 10%;
+  gap: 2%;
+}
+
+.story {
+  height: 50%;
+  width: 30%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.story .story-img {
+  width: 100%;
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.story-img img {
+  height: auto;
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  transition: transform 7s ease;
+}
+
+.story:hover img {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.story p {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-size: 0.8rem;
+  color: rgb(104, 110, 119);
+}
+
+.story h3 {
+  margin-top: 1%;
+  font-weight: 500;
+}
+
+/* action */
+.action {
+  min-height: 80%;
+  width: 100%;
+  position: relative;
+}
+
+.action video {
+  padding-top: 10%;
+  height: 100%;
+  width: 100%;
+}
+
+.see-use-cases {
+  position: absolute;
+  top: 95%;
+  left: 90%;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  min-height: 80%;
+  width: 100%;
+  background-color: #0c0c0c;
+  color: #fff;
+}
+
+.footer-container {
+  padding-top: 5%;
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1%;
+}
+
+.footer-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* flex-grow: 1; */
+}
+
+.footer-item p {
+  margin-bottom: 2%;
+  color: #666e7a;
+  font-size: 0.7;
+}
+
+.footer-item a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  position: relative;
+}
+
+.footer-item a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  width: 0;
+  background-color: #ddd;
+}
+
+.footer-item a:hover::before {
+  width: 100%;
+}
+
+/* footer-copyRight */
+.footer-copyRight {
+  margin-top: 6%;
+  padding: 1%;
+  margin-left: 1%;
+  display: flex;
+  gap: 10%;
+}
+
+.footer-copyRight .foot-logo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.footer-copyRight p:last-child {
+  font-size: 0.7rem;
+  color: #666e7a;
+  align-self: flex-end;
+  text-transform: uppercase;
+}
+
+.scrolled {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9)
+  );
+}
