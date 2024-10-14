@@ -241,7 +241,7 @@ nav .center {
 }
 
 .runway-item {
-  color: #fff;
+  /* color: #fff; */
   height: 50%;
   width: 30%;
   flex: 1;
@@ -302,7 +302,10 @@ nav .center {
 
 .runway-item h3,
 .runway-item p {
-  text-align: center;
+  text-align: left;
+}
+.runway-item p{
+  margin-left: 4%;
 }
 
 /* Research Section */
